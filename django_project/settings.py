@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     # Third-party
     # Local
     "shop.apps.ShopConfig",
+    "accounts.apps.AccountsConfig",
+    # django-cleanup
+    "django_cleanup.apps.CleanupConfig",
 ]
 
 MIDDLEWARE = [
@@ -124,3 +127,5 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+AUTH_USER_MODEL = "accounts.CustomUser"
