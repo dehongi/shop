@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # Local
     "shop.apps.ShopConfig",
     "accounts.apps.AccountsConfig",
+    "cart.apps.CartConfig",
     # django-cleanup
     "django_cleanup.apps.CleanupConfig",
 ]
@@ -133,3 +134,5 @@ MEDIA_ROOT = BASE_DIR / "media"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 AUTH_USER_MODEL = "accounts.CustomUser"
+
+CART_SESSION_ID = "cart"
